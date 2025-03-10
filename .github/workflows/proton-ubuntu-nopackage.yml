@@ -13,7 +13,7 @@ jobs:
         run: |
           sudo dpkg --add-architecture i386
           sudo apt update
-          sudo apt install -y libwayland-dev libwayland-bin libxkbcommon-dev libxkbregistry-dev libwayland-dev:i386 libwayland-bin:i386 libxkbcommon-dev:i386 libxkbregistry-dev:i386
+          sudo apt install -y libwayland-dev libwayland-bin libxkbcommon-dev libxkbregistry-dev
           export CARGO_HOME="$PWD"
           rustup target add i686-unknown-linux-gnu
           cd proton-tkg
